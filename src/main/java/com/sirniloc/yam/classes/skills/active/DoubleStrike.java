@@ -19,6 +19,7 @@ public class DoubleStrike extends SkillActive{
 
 	@Override
 	public int getID() {
+		// TODO Auto-generated method stub
 		return ID;
 	}
 

@@ -20,6 +20,7 @@ public class DamageRedirect extends SkillActive{
 
 	@Override
 	public int getID() {
+		// TODO Auto-generated method stub
 		return ID;
 	}
 
