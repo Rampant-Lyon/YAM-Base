@@ -11,6 +11,7 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 @Mod(modid = BaseYAM.MODID, version = BaseYAM.VERSION)
@@ -19,15 +20,17 @@ public class BaseYAM
     public static final String MODID = "yam";
     public static final String VERSION = "0.4";
     
+    @Instance(MODID)
+    public static BaseYAM instance;
     
     @CapabilityInject(IYam.class)
 	public static Capability<IYam> ABS_CAP = null;	
 	
 	public static final ResourceLocation STAT_ID = new ResourceLocation(BaseYAM.MODID, "CAPABILITY_STATS");
+	public static final String TITLE = "Y'all Meet in a Tavern";
     
     @EventHandler
     public void preInit(FMLInitializationEvent event)    {
-    	
     }
     
     @EventHandler
